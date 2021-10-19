@@ -1,0 +1,14 @@
+<h1 class="fs-1 mb-5 fw-bold d-flex justify-content-center"> {{titulo}} </h1>
+<form class=" w-50 d-flex justify-content-center mx-auto flex-wrap">
+    <div class="mb-3 col-12">
+      <label > {{a}} </label>
+      <input type="number" class="form-control" [(ngModel)] = "operandoA" name = "operandoA">
+    </div>
+    <br>
+    <div class="mb-3 mx-auto d-block col-12">
+      <label > {{b}} </label>
+      <input type="number" class="form-control" [(ngModel)] = "operandoB" name = "operandoB">
+    </div>
+    <button (click)="sumar()" type="submit" class="d-block btn btn-primary"> {{btnRes}} </button>
+    <p class="fs-5 my-auto mx-auto"> {{resultado}} </p>
+  </form>
